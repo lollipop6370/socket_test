@@ -1,7 +1,8 @@
 var net = require('net');
 
 var HOST = '127.0.0.1'; // 定義伺服器位址
-var PORT = 8000; // 定義 Port
+//var PORT = 8000; // 定義 Port
+const PORT = process.env.PORT || 5000;
 
 var server = net.createServer();
 
