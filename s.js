@@ -5,8 +5,8 @@ const server = require('http').Server(app);
 //const io = require('socket.io')(server);
 
 var HOST = '127.0.0.1'; // 定義伺服器位址
-var PORT = 8000; // 定義 Port
-
+//var PORT = 8000; // 定義 Port
+const PORT = process.env.PORT || 5000;
 
 server.on('listening', function(){
   console.log('Server is listening on port', PORT);
