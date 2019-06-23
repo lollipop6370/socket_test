@@ -25,9 +25,9 @@ server.on('connection', function(socket){
   console.log('client 端的 PORT：' + socket.remotePort); // client 端的 PORT：61929
 
   socket.on('data', function(data){
-    var textDecoder = new TextDecoder('utf-8');
-    str = textDecoder.decode(data);
-    console.log(str);
+    #var textDecoder = new TextDecoder('utf-8');
+    #str = textDecoder.decode(data);
+    console.log(data);
     
   });
 
