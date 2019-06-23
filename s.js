@@ -4,7 +4,7 @@ const app = express();
 const server = require('http').Server(app);
 //const io = require('socket.io')(server);
 
-var HOST = '127.0.0.1'; // 定義伺服器位址
+//var HOST = '127.0.0.1'; // 定義伺服器位址
 //var PORT = 8000; // 定義 Port
 const PORT = process.env.PORT || 5000;
 
@@ -37,4 +37,4 @@ server.on('close', function(){
   console.log('Server is now closed');
 });
 
-server.listen(PORT, HOST);
+server.listen(PORT);
